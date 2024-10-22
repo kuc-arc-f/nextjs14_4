@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from "@/components/ui/alert-dialog";
 
+import Layout from "./Layout";
 import CrudIndex from "../app/TodoList/CrudIndex";
 //
 interface Todo {
@@ -104,6 +105,7 @@ console.log(result);
   );
 
   return (
+  <Layout>
     <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-xl">
       <h1 className="text-2xl font-bold mb-4">TODO App</h1>
       
@@ -194,6 +196,8 @@ console.log(result);
         </AlertDialogContent>
       </AlertDialog>
     </div>
+
+  </Layout>
   );
 };
 
