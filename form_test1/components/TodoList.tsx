@@ -147,9 +147,10 @@ const TodoApp = () => {
                     id="food_orange"
                     name="food_orange"
                     checked={formData.food_orange}
-                    onCheckedChange={(checked) => 
-                      setFormData(prev => ({ ...prev, food_orange: checked }))
-                    }
+                    onCheckedChange={(checked) =>{
+                      //@ts-ignore
+                      setFormData(prev => ({ ...prev, food_orange: checked }));
+                    }}
                   />
                   <Label htmlFor="food_orange">Orange</Label>
                 </div>
@@ -158,9 +159,10 @@ const TodoApp = () => {
                     id="food_apple"
                     name="food_apple"
                     checked={formData.food_apple}
-                    onCheckedChange={(checked) => 
-                      setFormData(prev => ({ ...prev, food_apple: checked }))
-                    }
+                    onCheckedChange={(checked) =>{
+                      //@ts-ignore
+                      setFormData(prev => ({ ...prev, food_apple: checked }));
+                    }}
                   />
                   <Label htmlFor="food_apple">Apple</Label>
                 </div>
@@ -169,9 +171,10 @@ const TodoApp = () => {
                     id="food_banana"
                     name="food_banana"
                     checked={formData.food_banana}
-                    onCheckedChange={(checked) => 
+                    onCheckedChange={(checked) => {
+                      //@ts-ignore
                       setFormData(prev => ({ ...prev, food_banana: checked }))
-                    }
+                    }}
                   />
                   <Label htmlFor="food_banana">Banana</Label>
                 </div>
