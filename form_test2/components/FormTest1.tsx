@@ -14,6 +14,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Search } from 'lucide-react';
+import { format } from 'date-fns';
 
 import CrudIndex from "../app/form_test1/CrudIndex";
 //
@@ -27,9 +28,9 @@ const TodoApp = () => {
     title: '',
     content: '',
     public: 'public',
-    food_orange: false,
-    food_apple: false,
-    food_banana: false,
+    food_orange: true,
+    food_apple: true,
+    food_banana: true,
     pub_date: '',
     qty1: '',
     qty2: '',
@@ -83,10 +84,11 @@ const TodoApp = () => {
       //));
     } else {
 console.log("#handleSubmit");
-      //console.log(formData);
+      console.log(formData);
+      if(!formData.title){ return; }
       const result = await CrudIndex.addItem(formData);
       console.log(result);
-      location.reload();
+      //location.reload();
       setTodos([...todos, { ...formData, id: Date.now() }]);
     }
     resetForm();
@@ -94,17 +96,18 @@ console.log("#handleSubmit");
   };
 
   const resetForm = () => {
+    const date = new Date();
     setFormData({
       title: '',
       content: '',
       public: 'public',
-      food_orange: false,
-      food_apple: false,
-      food_banana: false,
-      pub_date: '',
-      qty1: '',
-      qty2: '',
-      qty3: ''
+      food_orange: true,
+      food_apple: true,
+      food_banana: true,
+      pub_date: format(date, 'yyyy-MM-dd'),
+      qty1: '0',
+      qty2: '0',
+      qty3: '0'
     });
     setEditingTodo(null);
   };
