@@ -6,7 +6,7 @@
 
  date    : 2024/10/19
 
- update  : 2024/10/23
+ update  : 2024/10/24
 
 ***
 ### Summary
@@ -23,5 +23,7 @@ https://claude.ai/new
 
 * todo1: Claude.ai generate
 * todo2: d1 database save , TODO data
+* form_test1: form edit, Claude.ai generate
+* form_test2: data save, server side
 
 ***
