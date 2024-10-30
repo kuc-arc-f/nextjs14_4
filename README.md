@@ -25,5 +25,6 @@ https://claude.ai/new
 * todo2: d1 database save , TODO data
 * form_test1: form edit, Claude.ai generate
 * form_test2: data save, server side
+* nextauth: auth example
 
 ***
