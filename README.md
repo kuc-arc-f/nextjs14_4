@@ -6,7 +6,7 @@
 
  date    : 2024/10/19
 
- update  : 2024/10/30  
+ update  : 2024/10/31  
 
 ***
 ### Summary
@@ -26,6 +26,7 @@ https://claude.ai/new
 * form_test1: form edit, Claude.ai generate
 * form_test2: data save, server side
 * form_test5: tanstack/react-table , example
+* form_test6: form edit, localStorage save 
 * nextauth: auth example
 
 ***
