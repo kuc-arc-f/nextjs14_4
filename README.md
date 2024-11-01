@@ -26,7 +26,8 @@ https://claude.ai/new
 * form_test1: form edit, Claude.ai generate
 * form_test2: data save, server side
 * form_test5: tanstack/react-table , example
-* form_test6: form edit, localStorage save 
+* form_test6: form edit, localStorage save
+* form_test7: d1 database, form data save
 * nextauth: auth example
 
 ***
